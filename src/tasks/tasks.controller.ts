@@ -24,7 +24,7 @@ export class TasksController {
 
   @Get()
   getTasks(@Query(ValidationPipe) filterDto: GetTasksFilterDto) {
-    return this.tasksService.getTasks(filterDto)
+    return this.tasksService.getTasks(filterDto);
   }
 
   @Get('/:id')

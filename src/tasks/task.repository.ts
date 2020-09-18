@@ -22,6 +22,6 @@ export class TaskRepository extends Repository<Task> {
   }
 
   async getAllTasks(): Promise<Task[]> {
-    return await Task.find()
+    return await Task.find();
   }
 }
